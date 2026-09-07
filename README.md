@@ -61,7 +61,7 @@ Callbacks: EarlyStopping, ReduceLROnPlateau
 ## 🌐 Live Demo
 
 👉 Click here to try the app:  
-https://pneumonia-detector-8tsh42yhkkatcmxfachnce.streamlit.app/
+https://pneumonia-detector-ugrtryehgxxiozl2emyyq9.streamlit.app/
 
 ## ▶️ How to Run Locally
 
