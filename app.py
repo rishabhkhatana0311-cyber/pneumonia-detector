@@ -1,4 +1,9 @@
 import streamlit as st
+st.set_page_config(
+    page_title="Pneumonia Detection",
+    page_icon="🩺",
+    layout="centered"
+)
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
@@ -20,9 +25,20 @@ if not os.path.exists(model_path):
 model = load_model(model_path)
 
 # 3. Streamlit config
-st.set_page_config(page_title="Pneumonia Detection", layout="centered")
-st.markdown("<h1 style='text-align: center; color: #4CAF50;'>🩺 Pneumonia Detection from Chest X-ray</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>Upload a chest X-ray image to predict whether it shows signs of PNEUMONIA or is NORMAL.</p>", unsafe_allow_html=True)
+st.markdown(
+    "<h1 style='text-align: center; color: #4CAF50;'>🩺 Pneumonia Detection from Chest X-ray</h1>",
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    "<p style='text-align: center;'>Upload a chest X-ray image to predict whether it shows signs of PNEUMONIA or is NORMAL.</p>",
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    "<p style='text-align: center; font-size: 16px;'>Developed by <b>Rishabh Khatana</b></p>",
+    unsafe_allow_html=True
+)
 
 # 4. File uploader
 uploaded_file = st.file_uploader("Upload a chest X-ray image", type=["jpg", "jpeg", "png"])
