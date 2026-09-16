@@ -1,7 +1,7 @@
 # 🫁 Pneumonia Detection using CNN
 
 A deep learning based web application to detect **Pneumonia from Chest X-Ray images** using a Convolutional Neural Network (CNN).  
-Built during Summer Training at **C-DAC Mohali** and deployed using **Streamlit**.
+Built during Summer Training at **NIELIT ROPAR** and deployed using **Streamlit**.
 
 ---
 
